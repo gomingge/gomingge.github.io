@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title></title>
-    <url>%2F2019%2F04%2F11%2F%E6%96%B0%E5%BB%BA%E6%96%87%E6%9C%AC%E6%96%87%E6%A1%A3%2F</url>
-    <content type="text"></content>
-  </entry>
-  <entry>
     <title><![CDATA[终于解决hexo对Windows图片不友好的问题]]></title>
     <url>%2F2019%2F04%2F11%2F%E7%BB%88%E4%BA%8E%E8%A7%A3%E5%86%B3hexo%E5%AF%B9Windows%E5%9B%BE%E7%89%87%E4%B8%8D%E5%8F%8B%E5%A5%BD%E7%9A%84%E9%97%AE%E9%A2%98%2F</url>
     <content type="text"><![CDATA[问题 : hexo的next主题, 在Windows系统下, 使用Typora编辑文字, 发现Typora引用的图片无法在网站上显示, 网页默认路径是文章路径. 如果我想让网站显示图片, 只能用Typora引用在文章路径下的图片. 这样就导致了两问题 : 1. 编写文章及其麻烦 2. 图片直接放在路径下及其杂乱 1. 方案一 :利用图床, 图床分有免费网站和七牛云, 免费网站图片容易失去, 舍之. 七牛云需要绑定备案域名(免费送的只能给30天). 还有一个方案是用新浪图床小软件, 但是对于图片难以管理, 而且需要稳定的网络, 目前需要离线编辑文章 2. 方案二 :第一步 : 安装插件 把主页配置文件_config.yml 里的post_asset_folder:这个选项设置为true 在你的hexo目录下执行这样一句话npm install hexo-asset-image --save，这是下载安装一个可以上传本地图片的插件 等待一小段时间后, 看到+ hexo-asset-image@0.0.3 则安装好了 第二步 : 设置Typora 打开file -&gt; 偏好设置 -&gt; 图片插入 选择自定义./${filename} 然后勾选优先使用相对路径 遇到的问题有 : Typora 打开图表显示不出, 解决方案是不能下载X64版本的软件, 即便你的电脑是X64位的, 感觉Typora软件优化有问题 安装软件打不开, 显示主程序JavaScript异常 : 去C:\Users\XXXX\AppData\Roaming\ 把Typora相关名字的东西都删除 软件不能是0.9.4 版本, 因为版本过低, 没有自定义路径功能]]></content>
