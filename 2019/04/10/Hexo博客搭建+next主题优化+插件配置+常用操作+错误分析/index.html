@@ -124,7 +124,9 @@
 <meta property="og:image" content="https://huaji8.top/img/live2d/tororo.gif">
 <meta property="og:image" content="https://huaji8.top/img/live2d/hijiki.gif">
 <meta property="og:image" content="http://theme-next.iissnan.com/uploads/five-minutes-setup/analytics-baidu-id.png">
-<meta property="og:updated_time" content="2019-04-11T03:39:54.299Z">
+<meta property="og:image" content="http://yoursite.com/2019/04/10/Hexo博客搭建+next主题优化+插件配置+常用操作+错误分析/20160712221858092.png">
+<meta property="og:image" content="http://yoursite.com/2019/04/10/Hexo博客搭建+next主题优化+插件配置+常用操作+错误分析/20160712222026735.png">
+<meta property="og:updated_time" content="2019-04-11T23:56:04.301Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo博客搭建+next主题优化+插件配置+常用操作+错误分析">
 <meta name="twitter:description" content="前言 hexo 优点是轻量化, 对于喜欢用Markdown编辑的用户很容易入手. 主题好看, 使用简单 缺点: 图片上传Markdown很麻烦, 目前较好的方式是图床解决">
@@ -282,7 +284,7 @@
       
     
 
-    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签<span class="badge">3</span></a>
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签<span class="badge">4</span></a>
 
   </li>
         
@@ -301,7 +303,7 @@
       
     
 
-    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类<span class="badge">2</span></a>
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类<span class="badge">3</span></a>
 
   </li>
         
@@ -320,7 +322,7 @@
       
     
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档<span class="badge">3</span></a>
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档<span class="badge">7</span></a>
 
   </li>
 
@@ -468,7 +470,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-04-11 11:39:54" itemprop="dateModified" datetime="2019-04-11T11:39:54+08:00">2019-04-11</time>
+                <time title="修改时间：2019-04-12 07:56:04" itemprop="dateModified" datetime="2019-04-12T07:56:04+08:00">2019-04-12</time>
               
             
           </span>
@@ -946,9 +948,73 @@
 <p>所以需要重新编译，再启动服务器：<br><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">$ hexo generate</span><br><span class="line">$ hexo<span class="built_in"> server </span>-s</span><br></pre></td></tr></table></figure></p>
 <h4 id="Template-render-error"><a href="#Template-render-error" class="headerlink" title="Template render error"></a>Template render error</h4><p>有时运行命令<code>$ hexo generate</code> 返回一个错误:<br><figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">FATAL Something’s wrong. Maybe you can find the solution <span class="string">here:</span> &lt;<span class="string">http:</span><span class="comment">//hexo.io/docs/troubleshooting.html&gt;</span></span><br><span class="line">Template render <span class="string">error:</span> (unknown path)</span><br></pre></td></tr></table></figure></p>
 <p>这意味着有些认不出来单词在你的文件，并且很可能在你的新博文,或者配置文件<code>_config.yml</code>中，比如缩进错误：</p>
-<p>错误例子：<br>plugins:<br>hexo-generator-feed<br>hexo-generator-sitemap<br><figure class="highlight clean"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">### <span class="number">6.</span> 常用操作</span><br><span class="line"></span><br><span class="line">#### <span class="number">6.1</span> 创建文章</span><br><span class="line"></span><br><span class="line">命令：</span><br></pre></td></tr></table></figure></p>
-<p>$ hexo new [layout] <title><br><figure class="highlight gherkin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">参数说明：</span><br><span class="line"></span><br><span class="line">- [layout]可以为以下三种：</span><br><span class="line"></span><br><span class="line">|<span class="string"> 参数名 </span>|<span class="string"> 功能                    </span>|<span class="string"> 文章路径       </span>|</span><br><span class="line">|<span class="string"> ------ </span>|<span class="string"> ----------------------- </span>|<span class="string"> -------------- </span>|</span><br><span class="line">|<span class="string"> post   </span>|<span class="string"> 新建博文                </span>|<span class="string"> source/_posts  </span>|</span><br><span class="line">|<span class="string"> page   </span>|<span class="string"> 新建页面（如404，分类） </span>|<span class="string"> source         </span>|</span><br><span class="line">|<span class="string"> draft  </span>|<span class="string"> 草稿                    </span>|<span class="string"> source/_drafts </span>|</span><br><span class="line"></span><br><span class="line">草稿可通过一下命令发布：</span><br></pre></td></tr></table></figure></title></p>
-<p>$ hexo publish [layout] <title><br><code>`</code></title></p>
+<p>错误例子：<br>plugins:<br>hexo-generator-feed<br>hexo-generator-sitemap<br><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">####  5.12 Please make sure you have the correct access rights and the repository exists.</span></span><br><span class="line"></span><br><span class="line">问题原因 : 无法连接到 github服务器</span><br><span class="line"></span><br><span class="line">1. 首先我得重新在git设置一下身份的名字和邮箱(进入到需要提交的文件夹底下（因为直接打开git Bash，在没有路径的情况下，无法修改）</span><br><span class="line"></span><br><span class="line">```shell</span><br><span class="line">git<span class="built_in"> config </span>--global user.name <span class="string">"yourname"</span></span><br><span class="line"></span><br><span class="line">git<span class="built_in"> config </span>--global user.email“your@email.com<span class="string">"</span></span><br></pre></td></tr></table></figure></p>
+<p>注：yourname是你要设置的名字，your@email是你要设置的邮箱。</p>
+<ol start="2">
+<li><p>删除.ssh文件夹（直接搜索该文件夹）下的known_hosts(手动删除即可，不需要git）</p>
+</li>
+<li><p>git输入命令</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C "your@email.com"（请填你设置的邮箱地址）</span><br></pre></td></tr></table></figure>
+<p>接着出现：<code>Generating public/private rsa key pair. Enter file in which to save the key (/Users/your_user_directory/.ssh/id_rsa):</code></p>
+<p>请直接按下回车 回车 yes 回车 回车~</p>
+<p>然后系统会自动在.ssh文件夹下生成两个文件，id_rsa和id_rsa.pub，用记事本打开id_rsa.pub, 将全部的内容复制</p>
+</li>
+</ol>
+<ol start="4">
+<li><p>打开<a href="https://github.com/，登陆你的账户，进入设置" target="_blank" rel="noopener">https://github.com/，登陆你的账户，进入设置</a></p>
+<p><img src="/2019/04/10/Hexo博客搭建+next主题优化+插件配置+常用操作+错误分析/20160712221858092.png" alt="20160712221858092"></p>
+<p>进入ssh设置</p>
+<p>在key中将刚刚复制的粘贴进去</p>
+<p><img src="/2019/04/10/Hexo博客搭建+next主题优化+插件配置+常用操作+错误分析/20160712222026735.png" alt="20160712222026735"></p>
+<p>点击add ssh key，</p>
+<p>ok！</p>
+</li>
+</ol>
+<ol start="5">
+<li><p>在git中输入命令：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
+<p>然后会跳出一堆话。。</p>
+<p>输入命令：yes</p>
+</li>
+<li><p>注意: 操作这里的前提是根目录下的_config.yml修改成</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">deploy: #博客部署</span><br><span class="line">  type: git</span><br><span class="line">  repo: https://github.com/Github账号名称/Github账号名称.github.io.git</span><br><span class="line">    #coding: https://git.coding.net/码云账号名称/码云账号名称.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>而且仓库名必须为<code>&lt;Github账号名称&gt;.github.io</code> GitHub不允许自定义,免得不解析的</p>
+<h3 id="6-常用操作"><a href="#6-常用操作" class="headerlink" title="6. 常用操作"></a>6. 常用操作</h3><h4 id="6-1-创建文章"><a href="#6-1-创建文章" class="headerlink" title="6.1 创建文章"></a>6.1 创建文章</h4><p>命令：</p>
+<figure class="highlight gauss"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo <span class="keyword">new</span> [layout] &lt;<span class="built_in">title</span>&gt;</span><br></pre></td></tr></table></figure>
+<p>参数说明：</p>
+<ul>
+<li>[layout]可以为以下三种：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>参数名</th>
+<th>功能</th>
+<th>文章路径</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>post</td>
+<td>新建博文</td>
+<td>source/_posts</td>
+</tr>
+<tr>
+<td>page</td>
+<td>新建页面（如404，分类）</td>
+<td>source</td>
+</tr>
+<tr>
+<td>draft</td>
+<td>草稿</td>
+<td>source/_drafts</td>
+</tr>
+</tbody>
+</table>
+<p>草稿可通过一下命令发布：</p>
+<figure class="highlight accesslog"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo publish <span class="string">[layout]</span> &lt;title&gt;</span><br></pre></td></tr></table></figure>
 <ul>
 <li><p>title注意：</p>
 <p>不是博文标题，</p>
@@ -1204,7 +1270,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">3</span>
+                    <span class="site-state-item-count">7</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -1225,7 +1291,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">2</span>
+                      
+                    
+                    <span class="site-state-item-count">3</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -1248,7 +1316,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">3</span>
+                      
+                    
+                    <span class="site-state-item-count">4</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -1296,7 +1366,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#一-博客基本框架搭建"><span class="nav-text">一. 博客基本框架搭建</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-准备环境"><span class="nav-text">1. 准备环境</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-实施方案"><span class="nav-text">2. 实施方案</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-主题优化"><span class="nav-text">3. 主题优化</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#3-1-添加背景图"><span class="nav-text">3.1 添加背景图</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-2-修改Logo字体"><span class="nav-text">3.2 修改Logo字体</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-3-修改内容区域的宽度"><span class="nav-text">3.3 修改内容区域的宽度</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-4-网站标题栏背景颜色"><span class="nav-text">3.4 网站标题栏背景颜色</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-5-自定义鼠标样式"><span class="nav-text">3.5 自定义鼠标样式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-6-文章加密访问"><span class="nav-text">3.6 文章加密访问</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-7-实现点击出现桃心效果"><span class="nav-text">3.7 实现点击出现桃心效果</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-8-静态资源压缩"><span class="nav-text">3.8 静态资源压缩</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-9-博文置顶"><span class="nav-text">3.9 博文置顶</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-10-在右上角或者左上角实现fork-me-on-github"><span class="nav-text">3.10 在右上角或者左上角实现fork me on github</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-11-主页文章添加边框阴影效果"><span class="nav-text">3.11 主页文章添加边框阴影效果</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-12-显示当前浏览进度"><span class="nav-text">3.12 显示当前浏览进度</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-13-创建分类页"><span class="nav-text">3.13 创建分类页</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-14-加入-广告"><span class="nav-text">3.14 加入 广告</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-15-添加萌萌哒"><span class="nav-text">3.15 添加萌萌哒</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-16-关闭文章目录数字"><span class="nav-text">5.16 关闭文章目录数字</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-插件配置"><span class="nav-text">4. 插件配置</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#4-1-评论系统"><span class="nav-text">4.1 评论系统</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#4-1-1-Valine"><span class="nav-text">4.1.1 Valine</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#4-1-2-来必力-livere"><span class="nav-text">4.1.2 来必力/livere</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#4-1-3-畅言"><span class="nav-text">4.1.3 畅言</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#4-1-4-gitment"><span class="nav-text">4.1.4 gitment</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#4-1-5-Disqus"><span class="nav-text">4.1.5 Disqus</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-2-数据统计与分析"><span class="nav-text">4.2 数据统计与分析</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#4-2-1-不蒜子"><span class="nav-text">4.2.1 不蒜子</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#4-2-2-百度统计"><span class="nav-text">4.2.2 百度统计</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-3-内容分享服务"><span class="nav-text">4.3 内容分享服务</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#4-3-1-百度分享"><span class="nav-text">4.3.1 百度分享</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#4-3-2-need-more-share2"><span class="nav-text">4.3.2 need-more-share2</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-4-搜索服务"><span class="nav-text">4.4 搜索服务</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#4-1-Local-Search"><span class="nav-text">4.1 Local Search</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-错误分析"><span class="nav-text">5. 错误分析</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#5-1-YAML-Parsing-Error"><span class="nav-text">5.1 YAML Parsing Error</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-2-EMFILE-Error"><span class="nav-text">5.2 EMFILE Error</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-3-Process-Out-of-Memory"><span class="nav-text">5.3 Process Out of Memory</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-4-Git-Deployment-Problems"><span class="nav-text">5.4 Git Deployment Problems</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-5-Server-Problems"><span class="nav-text">5.5 Server Problems</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-6-Plugin-Installation-Problems"><span class="nav-text">5.6 Plugin Installation Problems</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-7-Error-with-DTrace-Mac-OS-X"><span class="nav-text">5.7 Error with DTrace (Mac OS X)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-8-Iterate-Data-Model-on-Jade-or-Swig"><span class="nav-text">5.8 Iterate Data Model on Jade or Swig</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-9-Data-Not-Updated"><span class="nav-text">5.9 Data Not Updated</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-10-No-command-is-executed"><span class="nav-text">5.10 No command is executed</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-11-Escape-Contents"><span class="nav-text">5.11 Escape Contents</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ENOSPC-Error-Linux"><span class="nav-text">ENOSPC Error (Linux)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#EMPERM-Error-Windows-Subsystem-for-Linux"><span class="nav-text">EMPERM Error (Windows Subsystem for Linux)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Template-render-error"><span class="nav-text">Template render error</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-2-文章模版"><span class="nav-text">6.2 文章模版</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-3-Front-matter"><span class="nav-text">6.3 Front-matter</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#一-博客基本框架搭建"><span class="nav-text">一. 博客基本框架搭建</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-准备环境"><span class="nav-text">1. 准备环境</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-实施方案"><span class="nav-text">2. 实施方案</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-主题优化"><span class="nav-text">3. 主题优化</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#3-1-添加背景图"><span class="nav-text">3.1 添加背景图</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-2-修改Logo字体"><span class="nav-text">3.2 修改Logo字体</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-3-修改内容区域的宽度"><span class="nav-text">3.3 修改内容区域的宽度</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-4-网站标题栏背景颜色"><span class="nav-text">3.4 网站标题栏背景颜色</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-5-自定义鼠标样式"><span class="nav-text">3.5 自定义鼠标样式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-6-文章加密访问"><span class="nav-text">3.6 文章加密访问</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-7-实现点击出现桃心效果"><span class="nav-text">3.7 实现点击出现桃心效果</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-8-静态资源压缩"><span class="nav-text">3.8 静态资源压缩</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-9-博文置顶"><span class="nav-text">3.9 博文置顶</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-10-在右上角或者左上角实现fork-me-on-github"><span class="nav-text">3.10 在右上角或者左上角实现fork me on github</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-11-主页文章添加边框阴影效果"><span class="nav-text">3.11 主页文章添加边框阴影效果</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-12-显示当前浏览进度"><span class="nav-text">3.12 显示当前浏览进度</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-13-创建分类页"><span class="nav-text">3.13 创建分类页</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-14-加入-广告"><span class="nav-text">3.14 加入 广告</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-15-添加萌萌哒"><span class="nav-text">3.15 添加萌萌哒</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-16-关闭文章目录数字"><span class="nav-text">5.16 关闭文章目录数字</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-插件配置"><span class="nav-text">4. 插件配置</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#4-1-评论系统"><span class="nav-text">4.1 评论系统</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#4-1-1-Valine"><span class="nav-text">4.1.1 Valine</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#4-1-2-来必力-livere"><span class="nav-text">4.1.2 来必力/livere</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#4-1-3-畅言"><span class="nav-text">4.1.3 畅言</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#4-1-4-gitment"><span class="nav-text">4.1.4 gitment</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#4-1-5-Disqus"><span class="nav-text">4.1.5 Disqus</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-2-数据统计与分析"><span class="nav-text">4.2 数据统计与分析</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#4-2-1-不蒜子"><span class="nav-text">4.2.1 不蒜子</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#4-2-2-百度统计"><span class="nav-text">4.2.2 百度统计</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-3-内容分享服务"><span class="nav-text">4.3 内容分享服务</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#4-3-1-百度分享"><span class="nav-text">4.3.1 百度分享</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#4-3-2-need-more-share2"><span class="nav-text">4.3.2 need-more-share2</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-4-搜索服务"><span class="nav-text">4.4 搜索服务</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#4-1-Local-Search"><span class="nav-text">4.1 Local Search</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-错误分析"><span class="nav-text">5. 错误分析</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#5-1-YAML-Parsing-Error"><span class="nav-text">5.1 YAML Parsing Error</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-2-EMFILE-Error"><span class="nav-text">5.2 EMFILE Error</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-3-Process-Out-of-Memory"><span class="nav-text">5.3 Process Out of Memory</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-4-Git-Deployment-Problems"><span class="nav-text">5.4 Git Deployment Problems</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-5-Server-Problems"><span class="nav-text">5.5 Server Problems</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-6-Plugin-Installation-Problems"><span class="nav-text">5.6 Plugin Installation Problems</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-7-Error-with-DTrace-Mac-OS-X"><span class="nav-text">5.7 Error with DTrace (Mac OS X)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-8-Iterate-Data-Model-on-Jade-or-Swig"><span class="nav-text">5.8 Iterate Data Model on Jade or Swig</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-9-Data-Not-Updated"><span class="nav-text">5.9 Data Not Updated</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-10-No-command-is-executed"><span class="nav-text">5.10 No command is executed</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-11-Escape-Contents"><span class="nav-text">5.11 Escape Contents</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ENOSPC-Error-Linux"><span class="nav-text">ENOSPC Error (Linux)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#EMPERM-Error-Windows-Subsystem-for-Linux"><span class="nav-text">EMPERM Error (Windows Subsystem for Linux)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Template-render-error"><span class="nav-text">Template render error</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-常用操作"><span class="nav-text">6. 常用操作</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#6-1-创建文章"><span class="nav-text">6.1 创建文章</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-2-文章模版"><span class="nav-text">6.2 文章模版</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-3-Front-matter"><span class="nav-text">6.3 Front-matter</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
